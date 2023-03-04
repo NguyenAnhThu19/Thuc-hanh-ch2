@@ -1,0 +1,13 @@
+#include <isotream.h>
+using name space std;
+void Tower
+if (n==1)
+{
+  count<<"chuyen dia tu" << A << "sang" <<c;
+ else
+ {
+   Tower (n-1, A, B, C);
+   Tower (1, A, B, C);
+   Tower (n-1, B, A, C);
+  }
+ }
