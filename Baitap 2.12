@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+long tinhXn(int n)
+{
+    if(n == 0)
+        return 1;
+    long S = 0;
+    for(int i = 1; i <= n; i++)
+    {
+        S = S + i * i * tinhXn(n - i);
+    }
+    return S;
+}
+int main()
+{
+    int n;
+    printf("\nNhap n: "); scanf("%d", &n);
+    long S = tinhXn(n);
+    printf("S = %ld", S);
+    getch();
+    return 0;
+}
